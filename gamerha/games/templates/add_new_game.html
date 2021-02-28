@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <select id="cars" name="cars" size="4" multiple>
+        {% for pt in platforms %}
+        <option value="{{pt}}" selected>{{pt}}</option>
+        {% endfor %}
+      </select>
+      <input type="date" value="{{released}}" />
+      <input type="file" id="img" name="img" accept="image/*" />
+      <input type="text" />
+      <select id="cars" name="cars" size="4" multiple>
+        {% for pt in genres %}
+        <option value="{{pt}}" selected>{{pt}}</option>
+        {% endfor %}
+      </select>
+      <select id="cars" name="cars" size="4" multiple>
+        {% for pt in developers %}
+        <option value="{{pt}}" selected>{{pt}}</option>
+        {% endfor %}
+      </select>
+      <select id="cars" name="cars">
+        {% for pt in publishers %}
+        <option value="{{pt}}" selected>{{pt}}</option>
+        {% endfor %}
+      </select>
+      <select id="cars" name="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+      </select>
+    </form>
+  </body>
+</html>
